@@ -9,9 +9,3 @@ function setUpPage () {
 
 }
 
-
-// function resetScore () {
-// 	alert("Hello");
-// }
-
-
