@@ -13,15 +13,16 @@ function setUpPage () {
 	}
 }
 
-function addClass(element, className){
+
+// -----------------------------------------------------------------------
+
+function addClass(element, className) {
   element.classList.add(className);
 }
 
-function removeClass(element, className){
+function removeClass(element, className) {
   element.classList.remove(className);
 }
-// -----------------------------------------------------------------------
-
 
 // function playerMove () {
 // 	alert("Warning");
@@ -30,7 +31,7 @@ function removeClass(element, className){
 // VARIABLES
 
 var playerTurn = 0
-var board = [["", "", ""], [],[],[],];
+var board = [["", "", ""], [""],[""],[""],];
 
 // ----------------------------------------------------------------------- 
 
@@ -74,10 +75,36 @@ function playerMove () {
     board[2][2] = xO;
     break;
 	}
-}
 
-// // // ready messages
-// function playerPrompt () {
-// 	var elements = document.getElementsByClassName("ready-message")
-// 	for (var i = 0)
-// }
+  var playerWin = false;
+ 
+
+  
+  playerTurn++;
+
+  
+  if(playerWin){
+  	var winX
+  }
+  if(playerTurn === 8){
+  } 
+  else {
+    
+    if(playerTurn % 2 === 0){
+      var showX = document.getElementById("player-x-ready");
+      	addClass(showX, "visible");
+      	removeClass(showX, "hidden");
+      var hideO = document.getElementById("player-o-ready");
+      	addClass(hideO, "hidden");
+      	removeClass(hideO, "visible");
+    } 
+    else {
+      var showO = document.getElementById("player-o-ready");
+      	addClass(showO, "visible");
+      	removeClass(showO, "hidden");
+      var hideX = document.getElementById("player-x-ready");
+      	addClass(hideX, "hidden");
+      	removeClass(hideX, "visible");
+    }
+  }
+}
