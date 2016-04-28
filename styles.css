@@ -1,7 +1,15 @@
 body {
 	font-family: 'Lato';
+	margin: 0;
+	padding: 0;
+	text-align: center;
 }
 
+h1 {
+	font-weight: 100;
+	font-size: 3em;
+	letter-spacing: .25em;
+}
 .visible {
   display: block;
 }
@@ -10,8 +18,13 @@ body {
   display: none;
 }
 
+div.board-container {
+	max-width: 300px;
+}
 .board-tile {
+	width: 100px;
+	height: 100px;
 	border-style: solid;
-	padding: 10px;
 	border-width: 1px;
+	text-align: center;
 }

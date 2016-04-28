@@ -2,14 +2,21 @@
 <html>
 <head>
   <title>Tic Tac Toe</title>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
   <link rel="stylesheet" type="text/css" href="./styles.css">
   <script src="./script.js"></script>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <div class="container">
-    <h1>Tic Tac Toe</h1>
+    <h1>TIC TAC TOE</h1>
 
     <div class="reset-container">
       <a href="#" class="reset-button" id="reset-button">Reset</a>
@@ -43,8 +50,8 @@
       </div>
     </div>
 
-    <div class="board-container">
-      <table class="board" id="game-board">
+    <div class="board-container col s12">
+      <table class="board responsive-tabls" id="game-board">
         <tr>
           <td class="board-tile row-1 col-1" id="tile-1-1">1</td>
           <td class="board-tile row-1 col-2" id="tile-1-2">2</td>
@@ -56,14 +63,14 @@
           <td class="board-tile row-2 col-3" id="tile-2-3">6</td>
         </tr>
         <tr>
-          <td class="board-tile row-3 col-1" id="tile-3-1">4</td>
-          <td class="board-tile row-3 col-2" id="tile-3-2">5</td>
-          <td class="board-tile row-3 col-3" id="tile-3-3">6</td>
+          <td class="board-tile row-3 col-1" id="tile-3-1">7</td>
+          <td class="board-tile row-3 col-2" id="tile-3-2">8</td>
+          <td class="board-tile row-3 col-3" id="tile-3-3">9</td>
         </tr>
       </table>
     </div>
     <!-- save the game log feature for last -->
-    <div class="game-log-container">
+    <div class="game-log-container hidden">
       <h2 class="game-log-header">Game Log</h2>
       <ol class="game-log-list" id="game-log">
         <!-- dummy data -->
